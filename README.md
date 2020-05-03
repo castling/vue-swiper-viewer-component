@@ -1,7 +1,7 @@
 # vue-swiper-viewer-component
 
 ## Description:
-Swiper.jsを用いた画像配列のビューア。Vue.jsのコンポーネント。
+Vue.js component of image viewer using Swiper.js.
 
 ## Installation
 
@@ -20,5 +20,5 @@ Vue.comonent('swiper-viewer', SwiperViewer)
 # props
 
 * `images` `{Array<String>}` image URLs
-* `page` `{Number}` showing page number
+* `page` `{Number}` showing page number [sync]
 * `showSwitch` `{Boolean}` show/hide swiper buttons
