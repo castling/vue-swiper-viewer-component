@@ -46,7 +46,7 @@ export default {
       deep: true,
     },
     page(num) {
-      if( this.swiper ) {
+      if( num!=null && this.swiper ) {
         this.swiper.slideTo(num-1)
       }
     },
