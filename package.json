@@ -1,0 +1,20 @@
+{
+  "name": "vue-swiper-viewer-component",
+  "version": "1.0.0",
+  "description": "## Description: Swiper.jsを用いた画像配列のビューア。Vue.jsのコンポーネント。",
+  "main": "index.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castling/vue-swiper-viewer-component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/castling/vue-swiper-viewer-component/issues"
+  },
+  "homepage": "https://github.com/castling/vue-swiper-viewer-component#readme"
+}
