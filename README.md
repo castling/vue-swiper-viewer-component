@@ -12,7 +12,7 @@ npm i castling/vue-swiper-viewer-component
 ## Usage:
 
 ```javascript
-import SwiperViewer from 'castling/vue-swiper-viewer-component'
+import SwiperViewer from 'vue-swiper-viewer-component'
 
 Vue.comonent('swiper-viewer', SwiperViewer)
 ```
