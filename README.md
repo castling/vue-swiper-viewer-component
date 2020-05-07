@@ -1,7 +1,7 @@
 # vue-swiper-viewer-component
 
 ## Description:
-Vue.js component of image viewer using Swiper.js.
+Vue.js component of image viewer using [Swiper.js](https://swiperjs.com/).
 
 ## Installation
 
