@@ -69,7 +69,7 @@ export default {
         init: false,
       })
       this.swiper.on('slideChange',() => {
-        this.$emit('update:page',swiper.activeIndex)
+        this.$emit('update:page',this.swiper.activeIndex)
       })
       this.swiper.init()
     },
