@@ -1,5 +1,7 @@
 <template>
-  <div class="viewer">
+  <div class="viewer"
+    :class="{ 'no-image': images==null || images.length==0 }"
+    >
     <div class="swiper-container">
       <div class="swiper-wrapper viewer__wrapper">
         <div class="swiper-slide viewer__slide" v-for="(img,i) in images" :key="i">
@@ -93,7 +95,25 @@ export default {
 .viewer {
   width: 100%;
   height: 100%;
+  min-height: 200px;
   background-color: rgb(230,230,230);
+
+  &.no-image::after {
+    content: "NO PAGE";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
   .swiper-container {
     width: 100%;
     height: 100%;
