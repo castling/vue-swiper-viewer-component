@@ -3,11 +3,11 @@
     <div class="swiper-container">
       <div class="swiper-wrapper viewer__wrapper">
         <div class="swiper-slide viewer__slide" v-for="(img,i) in images" :key="i"
-          :class="{ 'no-image': noImage || images==null || images.length==0 }"
+          :class="{ 'no-image': noImage[i] || images==null || images.length==0 }"
           >
           <img :data-src="img" class="swiper-lazy viewer__image"
-            @error="noImage = true"
-            @success="noImage = true"
+            @error="setNoImage(i,true)"
+            @success="setNoImage(i,false)"
           >
           <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </div>
@@ -38,7 +38,7 @@ export default {
         scrollbar: {
           el: '.swiper-scrollbar',
         },
-        noImage: false,
+        noImage: [],
       },
     }
   },
@@ -88,6 +88,9 @@ export default {
       setTimeout(() => {
         this.swiper.update()
       },100)
+    },
+    setNoImage(num,flg) {
+      this.$set(this.noImage,num,flg)
     },
   },
 }
