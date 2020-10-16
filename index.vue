@@ -1,11 +1,14 @@
 <template>
   <div class="viewer"
-    :class="{ 'no-image': images==null || images.length==0 }"
+    :class="{ 'no-image': noImage || images==null || images.length==0 }"
     >
     <div class="swiper-container">
       <div class="swiper-wrapper viewer__wrapper">
         <div class="swiper-slide viewer__slide" v-for="(img,i) in images" :key="i">
-          <img :data-src="img" class="swiper-lazy viewer__image">
+          <img :data-src="img" class="swiper-lazy viewer__image"
+            @error="noImage = true"
+            @success="noImage = true"
+          >
           <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </div>
       </div>
@@ -35,6 +38,7 @@ export default {
         scrollbar: {
           el: '.swiper-scrollbar',
         },
+        noImage: false,
       },
     }
   },
