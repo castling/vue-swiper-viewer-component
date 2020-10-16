@@ -38,8 +38,8 @@ export default {
         scrollbar: {
           el: '.swiper-scrollbar',
         },
-        noImage: [],
       },
+      noImage: [],
     }
   },
   watch: {
@@ -105,20 +105,27 @@ export default {
   min-height: 200px;
   background-color: rgb(230,230,230);
 
-  .viewer__slide.no-image::after {
-    content: "NO PAGE";
-    position: absolute;
-    width: 100%;
+  .viewer__slide.no-image {
     height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Verdana;
-    font-size: 2.5rem;
-    font-weight: 800;
+    min-height: 300px;
+    &::after {
+      content: "NO PAGE";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Verdana;
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+    .viewer__image {
+      display: none;
+    }
   }
 
   .swiper-container {
