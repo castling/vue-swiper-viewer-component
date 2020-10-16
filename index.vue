@@ -1,10 +1,10 @@
 <template>
-  <div class="viewer"
-    :class="{ 'no-image': noImage || images==null || images.length==0 }"
-    >
+  <div class="viewer">
     <div class="swiper-container">
       <div class="swiper-wrapper viewer__wrapper">
-        <div class="swiper-slide viewer__slide" v-for="(img,i) in images" :key="i">
+        <div class="swiper-slide viewer__slide" v-for="(img,i) in images" :key="i"
+          :class="{ 'no-image': noImage || images==null || images.length==0 }"
+          >
           <img :data-src="img" class="swiper-lazy viewer__image"
             @error="noImage = true"
             @success="noImage = true"
@@ -102,7 +102,7 @@ export default {
   min-height: 200px;
   background-color: rgb(230,230,230);
 
-  &.no-image::after {
+  .viewer__slide.no-image::after {
     content: "NO PAGE";
     position: absolute;
     width: 100%;
