@@ -1,20 +1,46 @@
 {
-  "name": "vue-swiper-viewer-component",
-  "version": "1.0.0",
-  "description": "## Description: Swiper.jsを用いた画像配列のビューア。Vue.jsのコンポーネント。",
-  "main": "index.vue",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_from": "github:castling/vue-swiper-viewer-component",
+  "_id": "vue-swiper-viewer-component@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/vue-swiper-viewer-component",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "github:castling/vue-swiper-viewer-component",
+    "rawSpec": "github:castling/vue-swiper-viewer-component",
+    "saveSpec": "github:castling/vue-swiper-viewer-component",
+    "fetchSpec": null,
+    "gitCommittish": null
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "github:castling/vue-swiper-viewer-component#e440a2f8d2194e9eee009a75835920328bee2abb",
+  "_spec": "github:castling/vue-swiper-viewer-component",
+  "_where": "/Users/sugi/script/seppyou2020/web",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/castling/vue-swiper-viewer-component/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "## Description: Swiper.jsを用いた画像配列のビューア。Vue.jsのコンポーネント。",
+  "homepage": "https://github.com/castling/vue-swiper-viewer-component#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.vue",
+  "name": "vue-swiper-viewer-component",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/castling/vue-swiper-viewer-component.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/castling/vue-swiper-viewer-component/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/castling/vue-swiper-viewer-component#readme"
+  "version": "1.0.0",
+  "dependencies": {
+    "vue-cool-lightbox": "^2.6.4"
+  }
 }
